@@ -7,3 +7,11 @@ zuul:
 ribbon:
   ReadTimeout: 10000
   ConnectTimeout: 10000
+zuul:
+  routes:
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+management:
+  security:
+    enabled: false
